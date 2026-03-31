@@ -1,9 +1,18 @@
 import React from 'react'
+import Navbar from './components/layout/Navbar'
+import Hero from './components/sections/Hero';
 
 const App = () => {
   return (
-    <div className='h-[1400px] text-5xl text-amber-700 font-bold'>App React</div>
-  )
-}
+    <div className='min-h-screen bg-black'>
+      <Navbar/>
+      
+
+      <main>
+        <Hero />
+      </main>
+    </div>
+  );
+};
 
 export default App
